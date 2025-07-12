@@ -1,6 +1,6 @@
 # Zyloo - Neon Vibes E-commerce
 
-![Zyloo Banner](https://your-image-link-here.com/banner.png)  
+![Zyloo Banner](https://i.ibb.co/Vp50f87F/zyloo-banner.png)  
 _Experience futuristic shopping with neon vibes and sleek UX._
 
 ---
@@ -21,14 +21,14 @@ Zyloo is a modern, visually striking e-commerce web app built with React and Tai
 ## 🎯 Live Demo
 
 Check out the live demo here:  
-[https://your-demo-url.netlify.app](https://your-demo-url.netlify.app)
+[https://zyloo-client.vercel.app/](https://zyloo-client.vercel.app/)
 
 ---
 
 ## 📂 GitHub Repository
 
 Explore the full source code:  
-[https://github.com/your-username/zyloo](https://github.com/your-username/zyloo)
+[https://github.com/minjamin-ahmmed/zyloo-client](https://github.com/minjamin-ahmmed/zyloo-client)
 
 ---
 
@@ -54,7 +54,7 @@ Explore the full source code:
 
 ```bash
 # Clone repo
-git clone https://github.com/your-username/zyloo.git
+git clone https://github.com/minjamin-ahmmed/zyloo-client.git
 
 # Navigate into project directory
 cd zyloo

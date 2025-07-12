@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import { ShoppingBag, ShoppingCart, Star } from "lucide-react"; // You can also use react-icons
+import { ShoppingBag, ShoppingCart, Star } from "lucide-react"; 
 import useCart from "../../context/useCart";
 
 const ProductDetails = () => {
