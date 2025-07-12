@@ -118,7 +118,7 @@ const ProductDetails = () => {
 
           {/* Add to Cart Button */}
           <button
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-full mt-8 w-fit bg-[#E7FF00] text-zinc-950 font-semibold shadow-[0_4px_24px_rgba(231,255,0,0.4)] backdrop-blur-md hover:scale-105 hover:shadow-[0_6px_32px_rgba(231,255,0,0.6)] transition-all duration-300 ease-in-out"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full mt-8 w-fit bg-[#E7FF00] text-zinc-950 font-semibold shadow-[0_4px_24px_rgba(231,255,0,0.4)] backdrop-blur-md hover:scale-105 hover:shadow-[0_6px_32px_rgba(231,255,0,0.6)] transition-all duration-300 ease-in-out cursor-pointer"
             onClick={() => addToCart(product)}
           >
             Add to Cart <ShoppingCart size={20} />

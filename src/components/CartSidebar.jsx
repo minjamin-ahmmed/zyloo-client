@@ -25,7 +25,6 @@ const CartSidebar = () => {
         isCartOpen ? "translate-x-0" : "translate-x-full"
       }`}
     >
-   
       <div className="flex justify-between items-center px-6 py-4 border-b border-zinc-700">
         <h2 className="text-xl font-bold text-[#E7FF00]">
           Your Cart ( {cartCount} ){" "}
@@ -35,7 +34,6 @@ const CartSidebar = () => {
         </button>
       </div>
 
-  
       <div className="p-6 flex flex-col gap-4 overflow-y-auto h-[calc(100%-150px)]">
         {cartItems.length === 0 ? (
           <p className="text-zinc-400 text-center mt-12">Your cart is empty.</p>
@@ -57,14 +55,14 @@ const CartSidebar = () => {
                 <div className="flex items-center gap-2 mt-2">
                   <button
                     onClick={() => decreaseQuantity(item.id)}
-                    className="bg-[#E7FF00] text-zinc-950 w-6 h-6 rounded-full flex items-center justify-center font-bold"
+                    className="bg-[#E7FF00] text-zinc-950 w-6 h-6 rounded-full flex items-center justify-center font-bold cursor-pointer"
                   >
                     <Minus size={14} />
                   </button>
                   <span className="text-white">{item.quantity}</span>
                   <button
                     onClick={() => addToCart(item)}
-                    className="bg-[#E7FF00] text-zinc-950 w-6 h-6 rounded-full flex items-center justify-center font-bold"
+                    className="bg-[#E7FF00] text-zinc-950 w-6 h-6 rounded-full flex items-center justify-center font-bold cursor-pointer"
                   >
                     <Plus size={14} />
                   </button>
@@ -76,7 +74,7 @@ const CartSidebar = () => {
                 </p>
                 <button
                   onClick={() => removeFromCart(item.id)}
-                  className="text-xs text-red-500 mt-1"
+                  className="text-xs text-red-500 mt-1 cursor-pointer"
                 >
                   Remove
                 </button>
@@ -86,14 +84,16 @@ const CartSidebar = () => {
         )}
       </div>
 
-    
       <div className="absolute bottom-0 w-full px-6 py-4 border-t border-zinc-700 bg-zinc-900">
         <div className="flex justify-between text-lg font-semibold mb-4">
           <span>Total</span>
           <span className="text-[#E7FF00]">${total.toFixed(2)}</span>
         </div>
         <Link to="/checkout">
-          <button className="w-full bg-[#E7FF00] text-zinc-950 py-3 rounded-full font-semibold hover:bg-yellow-300 transition">
+          <button
+            onClick={toggleCart}
+            className="flex justify-center items-center gap-2 px-7 py-3 rounded-full bg-[#E7FF00] text-zinc-950 font-semibold shadow-[0_4px_24px_rgba(231,255,0,0.4)] backdrop-blur-md hover:scale-105 hover:shadow-[0_6px_32px_rgba(231,255,0,0.6)] transition-all duration-300 ease-in-out cursor-pointer w-full text-center"
+          >
             Checkout
           </button>
         </Link>

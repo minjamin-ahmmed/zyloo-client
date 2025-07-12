@@ -8,25 +8,22 @@ const Navbar = () => {
 
   return (
     <nav className="bg-zinc-950 py-8 sticky top-0 z-50">
-   
       <div
-        className="w-full lg:max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center lg:rounded-full 
+        className="w-11/12 lg:max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex justify-between items-center rounded-full 
         backdrop-blur-2xl bg-white/10 border border-white/20 shadow-lg flex-wrap gap-y-4"
       >
-     
-        <Link to="/">
-          {" "}
-          <div className="text-2xl font-bold text-[#E7FF00]">
-            Zyloo <span className="text-white text-2xl">.</span>
-          </div>
-        </Link>
-
-        
-        <div className="hidden md:flex items-center w-full max-w-md mx-4"></div>
+        <div>
+          <Link to="/">
+            {" "}
+            <div className="text-2xl font-bold text-[#E7FF00]">
+              Zyloo <span className="text-white text-2xl">.</span>
+            </div>
+          </Link>
+        </div>
 
         <button
           onClick={toggleCart}
-          className="relative text-white hover:text-[#E7FF00] transition ml-auto md:ml-0"
+          className="relative text-white hover:text-[#E7FF00] transition ml-auto md:ml-0 cursor-pointer"
         >
           <ShoppingCart className="h-6 w-6" />
           {cartCount > 0 && (
@@ -35,9 +32,6 @@ const Navbar = () => {
             </span>
           )}
         </button>
-
-      
-        <div className="w-full mt-4 md:hidden flex items-center"></div>
       </div>
     </nav>
   );
